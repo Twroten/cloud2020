@@ -6,10 +6,10 @@ spring:
     name: cloud-payment-service
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
-    driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
-    url: jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver                # mysql驱动包
+    url: jdbc:mysql://localhost:3306/cloud2020?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
-    password: 123456
+    password: root
 
 eureka:
   client:
