@@ -7,7 +7,7 @@ spring:
   cloud:
     #Config客户端配置
     config:
-      label: master #分支名称
+      label: main  #分支名称     ## 2020年GitHub默认主分支名由[master]改为[main]
       name: config #配置文件名称
       profile: dev #读取后缀名称   上述3个综合：master分支上config-dev.yml的配置文件被读取http://config-3344.com:3344/master/config-dev.yml
       uri: http://localhost:3344 #配置中心地址
@@ -24,6 +24,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: config-client3366
+    prefer-ip-address: true
 
 # 暴露监控端点
 management:

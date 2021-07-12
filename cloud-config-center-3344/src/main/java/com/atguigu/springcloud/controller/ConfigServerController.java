@@ -7,15 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RefreshScope
-public class ConfigClientController {
+public class ConfigServerController {
     @Value("${server.port}")
     private String serverPort;
 
-    @Value("${config.info}")
-    private String configInfo;
+// 服务启动时为什么拉不到GitHub上的配置属性值
+//    @Value("${config.info}")
+//    private String configInfo;
 
     @GetMapping("/configInfo")
     public String getConfigInfo() {
-        return "serverPort: " + serverPort + "\t\n\n configInfo: " + configInfo;
+        return "serverPort: " + serverPort + "\t\n\n configInfo: ";
     }
 }
