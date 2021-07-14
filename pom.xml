@@ -26,6 +26,7 @@
         <module>cloud-config-center-3344</module>
         <module>cloud-config-client-3355</module>
         <module>cloud-config-client-3366</module>
+        <module>cloud-stream-rabbitmq-provider8801</module>
     </modules>
     <packaging>pom</packaging><!-- 这里添加，注意不是jar或war -->
 
@@ -112,6 +113,7 @@
                 <optional>true</optional>
             </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <build>
