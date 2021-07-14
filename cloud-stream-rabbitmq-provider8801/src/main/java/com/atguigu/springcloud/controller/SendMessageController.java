@@ -12,7 +12,7 @@ public class SendMessageController {
     @Resource
     private IMessageProvider messageProvider;
 
-    @GetMapping(value = "sendMessage")
+    @GetMapping(value = "/sendMessage")
     public String sendMessage() {
         return messageProvider.send();
     }
