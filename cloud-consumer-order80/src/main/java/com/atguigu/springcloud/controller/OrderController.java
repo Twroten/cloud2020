@@ -40,4 +40,13 @@ public class OrderController {
             return new CommonResult<>(444, "操作失败!");
         }
     }
+
+    @GetMapping(value = "/consumer/payment/zipkin")
+    public String paymentZipkin() {
+        log.debug("/payment/zipkin    before >>>>>>>>");
+        String result = restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin/", String.class);
+        log.debug("/payment/zipkin    after <<<<<<<<");
+        return result;
+    }
+
 }
