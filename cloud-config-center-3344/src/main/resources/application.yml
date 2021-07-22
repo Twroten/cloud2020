@@ -14,14 +14,21 @@ spring:
             - springcloud-config
           default-label: main #读取分支
           username: Twroten
-          password: Aw847159
+          password: ENC(pTdquxL6Me68dS5ixmn5gHt5WVBZoXCp)
           skip-ssl-validation: true
+
   #rabbitmq相关配置 15672是Web管理界面的端口；5672是MQ访问的端口
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
+
+jasypt:
+  encryptor:
+    password: 1125    # 加密的salt (盐值)
+    algorithm: PBEWithMD5AndDES   # 默认加密方式 PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
 
 #服务注册到eureka地址
 eureka:
