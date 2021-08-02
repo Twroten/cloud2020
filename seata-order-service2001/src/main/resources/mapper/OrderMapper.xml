@@ -12,15 +12,28 @@
     </resultMap>
 
     <insert id="creat">
-        insert into t_order (id, user_id, product_id, count, money, status)
-        values (null, #{userId}, #{productId}, #{count}, #{money}, 0);
+        INSERT
+        INTO t_order
+        (id,
+         user_id,
+         product_id,
+         COUNT,
+         MONEY,
+         status)
+        VALUES (NULL,
+                #{userId},
+                #{productId},
+                #{count},
+                #{money},
+                0);
     </insert>
 
     <update id="update">
-        update t_order
-        set status = 1
-        where user_id = #{userId}
-          and status = #{status};
+        UPDATE
+            t_order
+        SET status = 1
+        WHERE user_id = #{userId}
+          AND status = #{status};
     </update>
 
 </mapper>
