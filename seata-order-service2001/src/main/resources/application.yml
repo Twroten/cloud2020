@@ -14,9 +14,15 @@ spring:
         server-addr: localhost:8848
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/seata_order?useSSL=false
+    url: jdbc:mysql://localhost:3306/seata_order??useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
-    password: root
+    password: ENC(pVABLBaCZXX81dtRxQt/7Q==)
+
+jasypt:
+  encryptor:
+    password: 1125 # 加密的salt(盐值)
+    algorithm: PBEWithMD5AndDES   # 默认加密方式 PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
 
 feign:
   hystrix:
@@ -29,3 +35,5 @@ logging:
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
+
+
