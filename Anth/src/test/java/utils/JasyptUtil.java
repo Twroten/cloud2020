@@ -1,8 +1,10 @@
 package utils;
 
+import lombok.extern.slf4j.Slf4j;
 import org.jasypt.util.text.BasicTextEncryptor;
 import org.junit.jupiter.api.Test;
 
+@Slf4j
 public class JasyptUtil {
 
     @Test
@@ -14,4 +16,5 @@ public class JasyptUtil {
         String passwordCipher = textEncryptor.encrypt("root");
         System.out.println("passwordCipher = " + passwordCipher);
     }
+
 }

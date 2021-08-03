@@ -4,12 +4,16 @@
   "vchr_use_ste": "LDSY",
   "oprtg_org": "",
   "wtht_psbk_upd_qty": 0,
-  "txn_amt": 0.01,
-  "abst_code": "",
-  "vchr_serl_num": "0019999000001",
+  "cust_acct_num": {
+    "value": "99002CNY40800320000010",
+    "tags": "acctnum"
+  },
+  "txn_amt": 0.02,
+  "abst_code": "",8
+  "vchr_serl_num": "0019999000002",
   "br_code": "99",
   "change_psbk_cnt": 0,
-  "vchr_btch_num": "",
+  "vchr_btch_num": "0001",
   "par_val": 0.00,
   "alrdy_psbk_upd_num": 0,
   "change_card_cnt": 0,
