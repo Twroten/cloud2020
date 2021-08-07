@@ -1,5 +1,5 @@
 {
-  "vchr_catg": "001",
+  "vchr_catg": "700",
   "cust_num": "r011000002808",
   "vchr_use_ste": "LDSY",
   "oprtg_org": "",
@@ -8,9 +8,9 @@
     "value": "99002CNY40800320000010",
     "tags": "acctnum"
   },
-  "txn_amt": 0.02,
-  "abst_code": "",8
-  "vchr_serl_num": "0019999000002",
+  "txn_amt": 2.00,
+  "abst_code": "",
+  "vchr_serl_num": "",
   "br_code": "99",
   "change_psbk_cnt": 0,
   "vchr_btch_num": "0001",
