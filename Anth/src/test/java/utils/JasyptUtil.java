@@ -16,5 +16,10 @@ public class JasyptUtil {
         String passwordCipher = textEncryptor.encrypt("root");
         System.out.println("passwordCipher = " + passwordCipher);
     }
+    @Test
+    public void hashcodeDemo() {
+        String tLength = "7b955246-64aa-4330-a4e1-56c7faea4a7b".hashCode()+"";
+        System.out.println("tLength = " + tLength);
+    }
 
 }
