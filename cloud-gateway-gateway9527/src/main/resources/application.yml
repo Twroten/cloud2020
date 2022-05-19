@@ -23,18 +23,17 @@ spring:
           predicates:
             - Path=/payment/lb/**         # 断言，路径相匹配的进行路由
             - After=2020-05-15T08:03:46.454+08:00[Asia/Shanghai]    # 这个时间后才能起效
+    nacos:
+      discovery:
+        server-addr: 47.106.210.155:8848
 #            - Cookie=username,xio
 #            - Header=X-Request-Id, \d+
 #            - Method=GET
 ####################################################################
 
-eureka:
-  instance:
-    hostname: cloud-gateway-service
-    instance-id: gateway9527    #主机名称
-    prefer-ip-address: true    #访问路径可以显示IP地址
-  client: #服务提供者provider注册进eureka服务列表内
-    service-url:
-      register-with-eureka: true
-      fetch-registry: true
-      defaultZone: http://eureka7001.com:7001/eureka
+
+
+
+
+
+
