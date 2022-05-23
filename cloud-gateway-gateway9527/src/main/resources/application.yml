@@ -6,6 +6,9 @@ spring:
     name: cloud-gateway
 #############################新增网关配置###########################
   cloud:
+    nacos:
+      discovery:
+        server-addr: 47.106.210.155:8848
     gateway:
       discovery:
         locator:
@@ -23,9 +26,7 @@ spring:
           predicates:
             - Path=/payment/lb/**         # 断言，路径相匹配的进行路由
             - After=2020-05-15T08:03:46.454+08:00[Asia/Shanghai]    # 这个时间后才能起效
-    nacos:
-      discovery:
-        server-addr: 47.106.210.155:8848
+
 #            - Cookie=username,xio
 #            - Header=X-Request-Id, \d+
 #            - Method=GET

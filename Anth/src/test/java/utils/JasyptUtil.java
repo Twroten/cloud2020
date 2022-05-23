@@ -13,7 +13,7 @@ public class JasyptUtil {
         //密钥salt
         textEncryptor.setPassword("1125");
         //要加密的数据（数据库的用户名或密码）
-        String passwordCipher = textEncryptor.encrypt("root");
+        String passwordCipher = textEncryptor.encrypt("MySQLRoot");
         System.out.println("passwordCipher = " + passwordCipher);
     }
     @Test

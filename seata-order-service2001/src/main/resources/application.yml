@@ -16,7 +16,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://47.106.210.155:3306/seata_order?useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&useSSL=false
     username: root
-    password: ENC(pVABLBaCZXX81dtRxQt/7Q==)
+    password: ENC(BxeNcul3uiZl9lXg32vtErW5uv4l3m8y)
 
 jasypt:
   encryptor:
